@@ -7,6 +7,9 @@ lives = 10
 
 while lives > 0:
 
+    for character in secret_word:
+        print(character)
+
     guess = input("Guess a letter: ")
 
     if guess not in secret_word:
