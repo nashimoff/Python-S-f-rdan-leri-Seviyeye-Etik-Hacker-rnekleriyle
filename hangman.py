@@ -9,6 +9,8 @@ while lives > 0:
 
     for character in secret_word:
         print(character)
+        if guess == "a":
+            print("a")
 
     guess = input("Guess a letter: ")
 
