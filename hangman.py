@@ -9,4 +9,10 @@ while lives > 0:
 
     guess = input("Guess a letter: ")
 
-    if guess in secret_word:
+    if guess not in secret_word:
+        lives -= 10
+        print("Wrong guess!")
+        print(f"You have {lives} left")
+
+        if lives == 0:
+            print("You died!")
